@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div>
+      <h2 class="hero glitch layers" data-text="近設計"><span>近設計</span></h2>
+      <div class="form-wrapper d-flex justify-content-center">   
+        <form action="#" class="form">
+          <div class="form-group d-flex justify-content-center">
+          <a href="" class="typewrite title" data-period="2000" data-type='[ "Cadastro", "登録"]'>
+            <span class="wrap"></span>
+          </a>
+          </div>
+          <p class="description">Seja Bem Vindo.</p>
+          <div class="text-center mb-3">
+            <img src="/assets/Toji2.png" alt="avatar" class="slide-top" />
+          </div>
+          <div>          
+            <input
+              type="text"
+              class="form-control rounded border-white mb-3 form-input"
+              id="name"
+              placeholder="Nome"
+              value="Gabriel Mesquita Chaves"
+              pattern="[a-zA-Z\s]+"
+              title="Somente caracteres de A-Z"
+              required
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Data de Nascimento"
+              class="form-control rounded border-white mb-3 form-input"
+              id="nasc"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="date"             
+              max="2004-01-01"
+              min="1970-01-01"
+              value="06/10/1997"
+              required
+            />
+            <div class="hiddenM form-control mb-3 fw-bolder">Escolha uma Data por favor!</div>
+          </div>
+          
+          <div class="form-row d-flex">
+            <div class="col col-md-6 flex-fill">
+              <input
+                type="text"
+                class="form-control rounded border-white mb-3 form-input"
+                placeholder="Endereço"
+                pattern="[a-zà-úA-Z\s]+"
+                title="Somente caracteres de A-Z"
+                value="Rua Afonso"
+                required
+              />
+            </div>
+            <div class="col col-md-2 flex-grow-1 ps-3">
+              <input
+                type="text"
+                class="form-control rounded border-white mb-3 form-input"
+                placeholder="Número"
+                pattern="[0-9\s]{4}"
+                title="Somente números até 4 digitos"
+                value="1568"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control rounded border-white mb-3 form-input"
+              placeholder="Cidade"
+              pattern="[a-zà-úA-Z\s]+"
+              title="Somente caracteres de A-Z"
+              value="Porto Alegre"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control rounded border-white mb-3 form-input"
+              placeholder="Bairro"
+              pattern="[a-zà-úA-Z\s]+"
+              title="Somente caracteres de A-Z"
+              value="Belém Velho"
+              required
+            />
+          </div>
+          <div>
+            <select class="select form-control rounded border-white mb-3 form-input" required>
+              <option value="" disabled hidden selected>UF</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+              <option value="EX">Estrangeiro</option>
+            </select>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control rounded border-white mb-3 form-input"
+              placeholder="Apelido"
+              pattern="[a-zà-úA-Z\s]+"
+              value="Zaimoon"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control rounded border-white mb-3 form-input"
+              placeholder="CPF"
+              pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
+              title="somente números xxx.xxx.xxx-xx"
+              value="875.698.541-55"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control rounded border-white mb-3 form-input"
+              placeholder="RG"
+              pattern="[0-9]{12}"
+              title="somente números até 12 digitos"
+              value="896542365214"
+              required
+            />
+          </div>
+          <div class="submit-button-wrapper">
+            <input type="submit" id="valida" value="Validar" />
+            <input class ="mt-2"type="button" id="calcIdade" value="Idade" />
+            
+          </div>
+          </div>
+          <div id="demo-modal" class="modalc">
+            <div class="modal__content text-center">
+                <h1 class="title-modal"></h1>
+                <p class="p-dinamic">
+                </p>
+                <div id ="progress" class=""></div>                 
+            </div>    
+        </div>              
+          </div>
+        </form>    
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
